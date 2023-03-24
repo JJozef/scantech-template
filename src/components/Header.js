@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState } from 'react'
 import {
   ArchiveIcon,
@@ -23,45 +24,45 @@ export default function Header() {
       <div className='container xl:max-w-7xl mx-auto px-4 lg:px-8'>
         <div className='flex justify-between py-4'>
           <div className='flex items-center'>
-            <a
+            <Link
               href='/dashboard'
               className='group inline-flex items-center space-x-2 font-bold text-lg tracking-wide text-gray-700 hover:text-blue-600 active:text-gray-700'
             >
               <LogoIcon />
               <span>ScanTech</span>
-            </a>
+            </Link>
           </div>
 
           <div className='flex items-center space-x-2 lg:space-x-5'>
             <nav className='hidden lg:flex items-center space-x-2'>
-              <a
+              <Link
                 href='/dashboard'
                 className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-blue-600 border border-blue-100 bg-blue-50'
               >
                 <HomeIcon className='inline-block w-5 h-5' />
                 <span>Inicio</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href='/dashboard/asistencias'
                 className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100'
               >
                 <ClockIcon className='inline-block w-5 h-5 opacity-25 group-hover:opacity-100' />
                 <span>Asistencias</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href='/dashboard/proyectos'
                 className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100'
               >
                 <ArchiveIcon className='inline-block w-5 h-5 opacity-25 group-hover:opacity-100' />
                 <span>Proyectos</span>
-              </a>
-              <a
+              </Link>
+              <Link
                 href='/dashboard/horarios'
                 className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100'
               >
                 <CalendarIcon className='inline-block w-5 h-5 opacity-25 group-hover:opacity-100' />
                 <span>Horarios</span>
-              </a>
+              </Link>
             </nav>
 
             <div className='relative inline-block'>
@@ -85,7 +86,7 @@ export default function Header() {
               >
                 <div className='bg-white ring-1 ring-black ring-opacity-5 rounded-lg divide-y divide-gray-100'>
                   <div className='p-2.5 space-y-1'>
-                    <a
+                    <Link
                       role='menuitem'
                       href='#'
                       className='group text-sm font-medium flex items-center justify-between space-x-2 px-2.5 py-2 rounded-lg text-gray-700 border border-transparent hover:text-blue-800 hover:bg-blue-50 active:border-blue-100'
@@ -95,8 +96,8 @@ export default function Header() {
                       <div className='font-semibold inline-flex px-1.5 py-0.5 leading-4 text-xs rounded-full border border-blue-200 text-blue-700 bg-blue-100'>
                         2
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       role='menuitem'
                       href='#'
                       className='group text-sm font-medium flex items-center justify-between space-x-2 px-2.5 py-2 rounded-lg text-gray-700 border border-transparent hover:text-blue-800 hover:bg-blue-50 active:border-blue-100'
@@ -106,25 +107,25 @@ export default function Header() {
                       <div className='font-semibold inline-flex px-1.5 py-0.5 leading-4 text-xs rounded-full border border-blue-200 text-blue-700'>
                         5
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className='p-2.5 space-y-1'>
-                    <a
+                    <Link
                       role='menuitem'
                       href='#'
                       className='group text-sm font-medium flex items-center justify-between space-x-2 px-2.5 py-2 rounded-lg text-gray-700 border border-transparent hover:text-blue-800 hover:bg-blue-50 active:border-blue-100'
                     >
                       <UserAccountIcon className='flex-none inline-block w-5 h-5 opacity-25 group-hover:opacity-50' />
                       <span className='grow'>Cuenta</span>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       role='menuitem'
                       href='#'
                       className='group text-sm font-medium flex items-center justify-between space-x-2 px-2.5 py-2 rounded-lg text-gray-700 border border-transparent hover:text-blue-800 hover:bg-blue-50 active:border-blue-100'
                     >
                       <SettingsIcon className='flex-none inline-block w-5 h-5 opacity-25 group-hover:opacity-50' />
                       <span className='grow'>Ajustes</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className='p-2.5 space-y-1'>
                     <form>
@@ -156,34 +157,34 @@ export default function Header() {
 
         <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <nav className='flex flex-col space-y-2 py-4 border-t'>
-            <a
+            <Link
               href='/dashboard'
               className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-blue-600 border border-blue-50 bg-blue-50'
             >
               <HomeIcon className='inline-block w-5 h-5' />
               <span>Inicio</span>
-            </a>
-            <a
+            </Link>
+            <Link
               href='/dashboard/asistencias'
               className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100'
             >
               <ClockIcon className='inline-block w-5 h-5 opacity-25 group-hover:opacity-100' />
               <span>Asistencias</span>
-            </a>
-            <a
+            </Link>
+            <Link
               href='/dashboard/proyectos'
               className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100'
             >
               <ArchiveIcon className='inline-block w-5 h-5 opacity-25 group-hover:opacity-100' />
               <span>Proyectos</span>
-            </a>
-            <a
+            </Link>
+            <Link
               href='/dashboard/horarios'
               className='group text-sm font-semibold flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-800 border border-transparent hover:text-blue-600 hover:bg-blue-50 active:border-blue-100'
             >
               <CalendarIcon className='inline-block w-5 h-5 opacity-25 group-hover:opacity-100' />
               <span>Horarios</span>
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
