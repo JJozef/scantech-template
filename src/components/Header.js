@@ -82,7 +82,7 @@ export default function Header() {
                 aria-labelledby='tk-dropdown-layouts-user'
                 className={`${
                   isOpen ? 'block' : 'hidden'
-                } absolute right-0 origin-top-right mt-2 w-48 shadow-xl rounded-lg`}
+                } absolute right-0 origin-top-right mt-2 w-48 shadow-xl rounded-lg z-20`}
               >
                 <div className='bg-white ring-1 ring-black ring-opacity-5 rounded-lg divide-y divide-gray-100'>
                   <div className='p-2.5 space-y-1'>
