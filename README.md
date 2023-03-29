@@ -1,4 +1,10 @@
 ## Simple template for Scantech
 
-[View template](addlink)
+#### Urls
+
+- /dashboard
+  - /dashboard/asistencias
+  - /dashboard/proyectos
+  - /dashboard/proyectos
+  - /dashboard/horarios
 
