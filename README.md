@@ -5,6 +5,5 @@
 - /dashboard
   - /dashboard/asistencias
   - /dashboard/proyectos
-  - /dashboard/proyectos
   - /dashboard/horarios
 
